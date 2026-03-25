@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="ApiCoreEmpleadosRoutes/ApiCoreEmpleadosRoutes.csproj" />
+  <Project Path="NugetApiModels/NugetApiModels.csproj" Id="4d7ab7aa-598e-4603-8176-8e5911b89ec8" />
 </Solution>
