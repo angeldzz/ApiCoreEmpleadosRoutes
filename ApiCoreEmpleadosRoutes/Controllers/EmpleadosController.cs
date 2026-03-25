@@ -1,4 +1,4 @@
-﻿using ApiCoreEmpleadosRoutes.Models;
+﻿using NugetApiModels.Models;
 using ApiCoreEmpleadosRoutes.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

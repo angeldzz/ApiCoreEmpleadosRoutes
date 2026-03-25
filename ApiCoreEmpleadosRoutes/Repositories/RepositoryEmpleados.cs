@@ -1,5 +1,5 @@
 ﻿using ApiCoreEmpleadosRoutes.Data;
-using ApiCoreEmpleadosRoutes.Models;
+using NugetApiModels.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiCoreEmpleadosRoutes.Repositories

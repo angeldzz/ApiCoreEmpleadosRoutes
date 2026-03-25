@@ -1,4 +1,4 @@
-﻿using ApiCoreEmpleadosRoutes.Models;
+﻿using NugetApiModels.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Data.Common;
 

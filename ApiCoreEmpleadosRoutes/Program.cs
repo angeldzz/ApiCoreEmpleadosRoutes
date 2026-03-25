@@ -25,7 +25,11 @@ app.MapScalarApiReference();
 app.UseHttpsRedirection();
 
 // Redirigir la raíz a /scalar
-app.MapGet("/", () => Results.Redirect("/scalar") );
+app.MapGet("/", context =>
+{
+context.Response.Redirect("/scalar");
+    return Task.CompletedTask;
+});
 
 app.UseAuthorization();
 
