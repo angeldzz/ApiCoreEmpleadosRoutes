@@ -25,5 +25,24 @@ namespace ApiCoreEmpleadosRoutes.Controllers
         {
             return await this.repo.FindEmpleadosAsync(id);
         }
+        [HttpGet]
+        [Route("[action]")]
+        public async Task<ActionResult<List<string>>> Oficios()
+        {
+            return await this.repo.GetOficioAsync();
+        }
+        [HttpGet]
+        [Route("[action]/{oficio}")]
+        public async Task<ActionResult<List<Empleado>>> GetEmpleadosOficio(string oficio)
+        {
+            return await this.repo.GetEmpleadosOficioAsync(oficio);
+        }
+        [HttpGet]
+        [Route("[action]/{salario}/{iddepartamento}")]
+        public async Task<ActionResult<List<Empleado>>>
+            EmpleadosBySalarioDepartamento(int salario, int iddepartamento)
+        {
+            return await this.repo.GetEmpleadosSalarioDepartamentoAsync(salario, iddepartamento);
+        }
     }
 }
